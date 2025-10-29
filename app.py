@@ -208,15 +208,10 @@ st.markdown("""
 
 st.write("---")
 
-# Add back the previous interactive Get in Touch form with search bar
-st.header("💬 Contact Form & Search")
+# Contact form (without search)
+st.header("💬 Contact Form")
 
-# Search bar for portfolio queries
-search_query = st.text_input("🔍 Search or Ask Me Anything:", placeholder="e.g. AI projects, portfolio help, resume, etc.")
-if search_query:
-    st.success(f"You searched for: {search_query}")
-
-st.write("Or send me a message directly 👇")
+st.write("Send me a message directly 👇")
 
 col1, col2 = st.columns([1, 2])
 with col1:
