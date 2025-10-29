@@ -197,7 +197,7 @@ st.write("If you’d like to collaborate or hire me, reach out via email or conn
 # LinkedIn and GitHub icons
 st.markdown("""
 <div style="display:flex; gap:20px; align-items:center; justify-content:center; padding:20px;">
-    <a href="https://linkedin.com/in/harivadan" target="_blank">
+    <a href="https://linkedin.com/in/harikilambi" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40">
     </a>
     <a href="https://github.com/kilambihari" target="_blank">
