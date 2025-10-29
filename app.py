@@ -103,7 +103,7 @@ with col2:
         "AI Engineer | Data Scientist | AI/ML Enthusiast | Builder of Agentic RAG Systems & Streamlit Apps"
     )
     st.markdown("📍 Hyderabad, India | 📧 kilambihari@gmail.com")
-    st.download_button("📄 Download Resume", open("assets/HariKilambi_resume.pdf", "rb"), file_name="Harikilambi_Resume.pdf")
+    st.download_button("📄 Download Resume", open("assets/HariKilambi_resume.pdf", "rb"), file_name="HariKilambi_Resume.pdf")
 
 st.write("---")
 
