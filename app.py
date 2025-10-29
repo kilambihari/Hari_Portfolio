@@ -54,6 +54,7 @@ st.markdown(
       padding: 18px;
       border-radius: 16px;
       transition: all 0.4s ease;
+      border: none;
     }
 
     .card:hover {
@@ -82,6 +83,9 @@ st.markdown(
 
     a { color: #9ae6b4; text-decoration: none; transition: color 0.3s ease; }
     a:hover { color: #f472b6; }
+
+    /* Hide Streamlit's search bar */
+    [data-testid="stToolbar"] { visibility: hidden !important; }
 
     </style>
     """,
@@ -156,20 +160,20 @@ projects = [
         "tech": ["LangChain", "Gemini API", "Streamlit", "Python"]
     },
     {
-        "title": "Employee Career path prediction using AI",
+        "title": "Employee Career Path Prediction using AI",
         "desc": "AI voice assistant integrating search, retrieval, and voice interaction using Gemini and MCP agents.",
         "tech": ["Gemini", "joblib", "NumPy", "Pandas", "Python"]
     }
 ]
 
 for p in projects:
-    st.markdown("<div class='card'>", unsafe_allow_html=True)
-    st.markdown(f"### {p['title']}")
-    st.write(p["desc"])
-    tech_html = "".join([f"<span class='tech-badge'>{t}</span>" for t in p["tech"]])
-    st.markdown(tech_html, unsafe_allow_html=True)
-    st.markdown("</div>", unsafe_allow_html=True)
-    st.write("")
+    st.markdown(f"""
+        <div class='card'>
+            <h3>{p['title']}</h3>
+            <p>{p['desc']}</p>
+            {''.join(f"<span class='tech-badge'>{t}</span>" for t in p['tech'])}
+        </div>
+    """, unsafe_allow_html=True)
 
 st.write("---")
 
@@ -188,20 +192,18 @@ st.write("---")
 
 # ---------- Contact ----------
 st.header("📫 Get in Touch")
-st.write("If you’d like to collaborate or hire me, reach out via email or the form below!")
+st.write("If you’d like to collaborate or hire me, reach out via email or connect below:")
 
-col1, col2 = st.columns([1, 2])
-with col1:
-    name = st.text_input("Your Name")
-    email = st.text_input("Your Email")
-with col2:
-    message = st.text_area("Message")
-
-if st.button("Send Message"):
-    if name and email and message:
-        st.success("✅ Message received! (This demo doesn’t send emails — please reach out via email directly.)")
-    else:
-        st.error("⚠️ Please fill all fields before sending.")
+st.markdown("""
+<div style="display:flex; gap:20px; align-items:center; justify-content:center; padding:20px;">
+    <a href="https://linkedin.com/in/harivadan" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40">
+    </a>
+    <a href="https://github.com/kilambihari" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="40">
+    </a>
+</div>
+""", unsafe_allow_html=True)
 
 st.write("---")
 st.caption("© 2025 Harivadan Kilambi | Built with ❤️ using Streamlit")
