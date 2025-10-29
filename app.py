@@ -1,11 +1,11 @@
 # app.py
-# Streamlit portfolio for Harivadan (Hari) Kilambi
+# Streamlit portfolio for Harivadan Kilambi
 # With glowing animated background, resume download, and elegant layout
 
 import streamlit as st
 from PIL import Image
 
-st.set_page_config(page_title="Hari Kilambi — AI Engineer & Data Scientist", page_icon="💼", layout="wide")
+st.set_page_config(page_title="Harivadan Kilambi — AI Engineer & Data Scientist", page_icon="💼", layout="wide")
 
 # ---------- Custom CSS ----------
 st.markdown(
@@ -103,7 +103,7 @@ with col2:
         "AI Engineer | Data Scientist | AI/ML Enthusiast | Builder of Agentic RAG Systems & Streamlit Apps"
     )
     st.markdown("📍 Hyderabad, India | 📧 kilambihari@gmail.com")
-    st.download_button("📄 Download Resume", open("assets/HariKilambi_resume.pdf", "rb"), file_name="HariKilambi_resume.pdf")
+    st.download_button("📄 Download Resume", open("assets/HariKilambi_Resume.pdf", "rb"), file_name="HariKilambi_Resume.pdf")
 
 st.write("---")
 
