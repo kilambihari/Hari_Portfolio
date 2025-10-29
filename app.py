@@ -194,6 +194,7 @@ st.write("---")
 st.header("📫 Get in Touch")
 st.write("If you’d like to collaborate or hire me, reach out via email or connect below:")
 
+# LinkedIn and GitHub icons
 st.markdown("""
 <div style="display:flex; gap:20px; align-items:center; justify-content:center; padding:20px;">
     <a href="https://linkedin.com/in/harivadan" target="_blank">
@@ -206,4 +207,30 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.write("---")
+
+# Add back the previous interactive Get in Touch form with search bar
+st.header("💬 Contact Form & Search")
+
+# Search bar for portfolio queries
+search_query = st.text_input("🔍 Search or Ask Me Anything:", placeholder="e.g. AI projects, portfolio help, resume, etc.")
+if search_query:
+    st.success(f"You searched for: {search_query}")
+
+st.write("Or send me a message directly 👇")
+
+col1, col2 = st.columns([1, 2])
+with col1:
+    name = st.text_input("Your Name")
+    email = st.text_input("Your Email")
+with col2:
+    message = st.text_area("Message")
+
+if st.button("Send Message"):
+    if name and email and message:
+        st.success("✅ Message received! (This demo doesn’t send emails — please reach out via email directly.)")
+    else:
+        st.error("⚠️ Please fill all fields before sending.")
+
+st.write("---")
 st.caption("© 2025 Harivadan Kilambi | Built with ❤️ using Streamlit")
+
