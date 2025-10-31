@@ -155,27 +155,27 @@ st.header("🚀 Featured Projects")
 projects = [
     {
         "title": "Agentic RAG Chatbot (Gemini + MCP)",
-        "desc": "A multi-agent RAG chatbot using Gemini, FAISS, and MCP-style message passing. Deployed directly via GitHub.
+        "desc": """A multi-agent RAG chatbot using Gemini, FAISS, and MCP-style message passing. Deployed directly via GitHub.
                  Designed Ingestion agent, Retrieval agent, and LLMResponse agent for modular, scalable architecture, enabl-
                  ing efficient message passing between agents. Integrated Streamlit UI for real-time document upload, search,
-                 and connversational Q&A with context aware responses.",
+                 and conversational Q&A with context aware responses.""",
         "tech": ["Python", "Gemini API", "MCP", "FAISS", "Streamlit", "RAG", "NLP", "Pandas"]
     },
     {
         "title": "AI Marketing Idea Generator",
-        "desc": "Streamlit app that generates ad copies, slogans, and campaign ideas using Gemini & LangChain. Gets results in
+        "desc": """Streamlit app that generates ad copies, slogans, and campaign ideas using Gemini & LangChain. Gets results in
                  formats suitable for Social media, Email Marketing, web banners and more. An API key is loaded from Streamlit 
                  secrets. A custom wrapper around Gemini is built by extending langchain.llms.base.LLM. LangChain’s LLMChain is 
-                 used to call Gemini and return results.",
+                 used to call Gemini and return results.""",
         "tech": ["LangChain", "Gemini API", "Streamlit", "Python"]
     },
     {
         "title": "Employee Career Path Prediction using AI",
-        "desc": "Developed a proof-of-concept AI solution to predict employee performance using a Random Forest model and visua-
+        "desc": """Developed a proof-of-concept AI solution to predict employee performance using a Random Forest model and visua-
                  lize career paths using a Markov chain. Engineered a full-stack, proof-of-concept AI solution for HR analytics, 
                  demonstrating the potential for predicting employee performance, recommending training, and visualizing career 
                  paths. Engineered a user-friendly, interactive dashboard with Streamlit to present key insights and model outpu-
-                 ts.",
+                 ts.""",
         "tech": ["Gemini", "Scikit-learn", "Streamlit", "Pandas", "Python"]
     }
 ]
