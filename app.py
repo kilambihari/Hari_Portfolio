@@ -115,8 +115,10 @@ st.write("---")
 st.header("👨‍💼 About Me")
 st.write(
     """
-I’m a **Computer Science (Data Science)** student (2021–2025) passionate about **AI/ML, Generative AI, and multi-agent systems**.  
-I specialize in **LangChain, Gemini, Streamlit, and RAG (Retrieval-Augmented Generation)** architectures.
+I’m a **Computer Science (Data Science)** graduate (2021–2025) passionate about **AI/ML, Generative AI, and multi-agent systems**.  
+I specialize in **LangChain, Gemini, Streamlit, and RAG (Retrieval-Augmented Generation)** architectures. Expanding my knowledge in 
+AI by completing speciliazed courses and regularly following the latest trends , with strong skills in Data Analysis, Machine Learni-
+ng, and Visualization. Seeking real-world experience to apply and grow technical and analytical skills in a professional setting.
 
 Beyond coding, I’m deeply interested in Indian culture, vegetarian lifestyle, and technology for impact.
 """
@@ -128,13 +130,15 @@ st.write("---")
 st.header("🧠 Technical Skills")
 
 skills = {
-    "Languages": ["Python", "C", "R Programming", "SQL"],
+    "Languages": ["Python", "C", "R Programming"],
     "Libraries & Frameworks": [
         "TensorFlow", "PyTorch", "Keras", "Scikit-learn",
         "Pandas", "NumPy", "LangChain", "Google Gemini API",
-        "FAISS", "Streamlit", "Hugging Face", "Django"
+        "Streamlit", "Hugging Face", "Django", "NLTK"
     ],
-    "Tools & Platforms": ["Jupyter", "VS Code", "Git", "GitHub", "Power BI", "Tableau", "MySQL"],
+    "Database & Tools": ["MySQL", "SQL", "FAISS", "Jupyter", "VS Code", "Git", "GitHub"],
+    "Visualization": ["PowerBI", "Tableau", "Matplotlib", "Seaborn"],
+    "Big Data Technologies": ["Hadoop", "Hive", "Apache Spark", "Kafka"],
     "Concepts": ["Machine Learning", "Deep Learning", "RAG Systems", "NLP", "MCP Architecture"]
 }
 
@@ -151,18 +155,28 @@ st.header("🚀 Featured Projects")
 projects = [
     {
         "title": "Agentic RAG Chatbot (Gemini + MCP)",
-        "desc": "A multi-agent RAG chatbot using Gemini, FAISS, and MCP-style message passing. Deployed directly via GitHub.",
-        "tech": ["Python", "Gemini API", "MCP", "FAISS", "Streamlit"]
+        "desc": "A multi-agent RAG chatbot using Gemini, FAISS, and MCP-style message passing. Deployed directly via GitHub.
+                 Designed Ingestion agent, Retrieval agent, and LLMResponse agent for modular, scalable architecture, enabl-
+                 ing efficient message passing between agents. Integrated Streamlit UI for real-time document upload, search,
+                 and connversational Q&A with context aware responses.",
+        "tech": ["Python", "Gemini API", "MCP", "FAISS", "Streamlit", "RAG", "NLP", "Pandas"]
     },
     {
         "title": "AI Marketing Idea Generator",
-        "desc": "Streamlit app that generates ad ideas, slogans, and marketing insights using Gemini & LangChain.",
+        "desc": "Streamlit app that generates ad copies, slogans, and campaign ideas using Gemini & LangChain. Gets results in
+                 formats suitable for Social media, Email Marketing, web banners and more. An API key is loaded from Streamlit 
+                 secrets. A custom wrapper around Gemini is built by extending langchain.llms.base.LLM. LangChain’s LLMChain is 
+                 used to call Gemini and return results.",
         "tech": ["LangChain", "Gemini API", "Streamlit", "Python"]
     },
     {
         "title": "Employee Career Path Prediction using AI",
-        "desc": "AI voice assistant integrating search, retrieval, and voice interaction using Gemini and MCP agents.",
-        "tech": ["Gemini", "joblib", "NumPy", "Pandas", "Python"]
+        "desc": "Developed a proof-of-concept AI solution to predict employee performance using a Random Forest model and visua-
+                 lize career paths using a Markov chain. Engineered a full-stack, proof-of-concept AI solution for HR analytics, 
+                 demonstrating the potential for predicting employee performance, recommending training, and visualizing career 
+                 paths. Engineered a user-friendly, interactive dashboard with Streamlit to present key insights and model outpu-
+                 ts.",
+        "tech": ["Gemini", "Scikit-learn", "Streamlit", "Pandas", "Python"]
     }
 ]
 
