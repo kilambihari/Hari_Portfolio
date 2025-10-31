@@ -206,9 +206,23 @@ st.write("---")
 
 # ---------- Contact ----------
 st.header("📫 Get in Touch")
-st.write("If you’d like to collaborate or hire me, reach out via email or connect below:")
+st.write("If you’d like to collaborate or hire me, reach out via this form or connect below:")
 
-# LinkedIn and GitHub icons
+# Contact form (Formspree)
+contact_form = """
+<form action="https://formspree.io/f/mgvpnvpp" method="POST">
+    <input type="text" name="name" placeholder="Your name" required style="width:100%; padding:10px; border-radius:10px; border:none; margin-bottom:10px;">
+    <input type="email" name="email" placeholder="Your email" required style="width:100%; padding:10px; border-radius:10px; border:none; margin-bottom:10px;">
+    <textarea name="message" placeholder="Your message" required style="width:100%; height:120px; padding:10px; border-radius:10px; border:none; margin-bottom:10px;"></textarea>
+    <button type="submit" style="background:linear-gradient(90deg, #7c3aed, #ec4899, #facc15); color:white; padding:10px 20px; border:none; border-radius:10px; cursor:pointer;">
+        Send Message 🚀
+    </button>
+</form>
+"""
+
+st.markdown(contact_form, unsafe_allow_html=True)
+
+# Social links
 st.markdown("""
 <div style="display:flex; gap:20px; align-items:center; justify-content:center; padding:20px;">
     <a href="https://linkedin.com/in/harikilambi" target="_blank">
@@ -221,25 +235,4 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.write("---")
-
-# Contact form (without search)
-st.header("💬 Contact Form")
-
-st.write("Send me a message directly 👇")
-
-col1, col2 = st.columns([1, 2])
-with col1:
-    name = st.text_input("Your Name")
-    email = st.text_input("Your Email")
-with col2:
-    message = st.text_area("Message")
-
-if st.button("Send Message"):
-    if name and email and message:
-        st.success("✅ Message received! (This demo doesn’t send emails — please reach out via email directly.)")
-    else:
-        st.error("⚠️ Please fill all fields before sending.")
-
-st.write("---")
 st.caption("© 2025 Harivadan Kilambi | Built with ❤️ using Streamlit")
-
