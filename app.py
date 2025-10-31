@@ -96,7 +96,7 @@ st.markdown(
 col1, col2 = st.columns([1, 3], gap="large")
 with col1:
     try:
-        profile_pic = Image.open("assets/profile.png.jpeg")
+        profile_pic = Image.open("assets/profile.png (2).jpeg")
         st.image(profile_pic, width=160)
     except:
         st.warning("Profile image not found in assets folder!")
